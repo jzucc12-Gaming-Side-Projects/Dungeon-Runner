@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: AI Attack Animator
+  m_Controller: {fileID: 9100000, guid: 6614acc76f194b0439dfb4ea1c47b526, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: a48be344907c46249b4d5295e9d92528, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 1556be47aeb6f824b9407427255fc23c, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: c23681da2e954a14881a08e2f0da03d5, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 7027a99d46a605a4a92c253a96c9fdc6, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 1541e3c4bb2d1c9448b27c7857dd6d66, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: d7f6124d66392cc41bd7dd41043ae194, type: 2}
