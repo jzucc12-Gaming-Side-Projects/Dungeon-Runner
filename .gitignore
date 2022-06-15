@@ -62,5 +62,4 @@ sysinfo.txt
 crashlytics-build.properties
 
 **/Assets/AllIn1SpriteShader
-**/Assets/Plugins
-**/Assets/3rd Party Resources (ignore in git)
+**/Assets/_3rd Party Resources (ignore in git)
