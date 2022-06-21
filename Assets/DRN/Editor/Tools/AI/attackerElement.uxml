@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <ui:Template name="statEntry" src="project://database/Assets/DRN/Editor/Tools/statEntry.uxml?fileID=9197481963319205126&amp;guid=a0641a944200e9a448623698c1236c45&amp;type=3#statEntry" />
+    <Style src="project://database/Assets/JZ/Editor/Tools/JZBaseEditorUSS.uss?fileID=7433441132597879392&amp;guid=e2dd8255bef6ea644922d20c19c23a06&amp;type=3#JZBaseEditorUSS" />
+    <ui:Foldout text="Attacker AI" name="Foldout" value="false" class="subHeader">
+        <ui:TextField picking-mode="Ignore" label="Attacker Name" value="New Attacker" text="New Attacker" name="attackerName" tooltip="Name of the attacker and the GameObject containing this component." class="fieldText" />
+        <ui:DropdownField label="Logic Script" index="-1" choices="System.Collections.Generic.List`1[System.String]" name="logicScript" tooltip="Logic script this attacker will attach to." />
+        <ui:Instance template="statEntry" name="statEntry" tooltip="Stats provided by this attacker." />
+    </ui:Foldout>
+</ui:UXML>

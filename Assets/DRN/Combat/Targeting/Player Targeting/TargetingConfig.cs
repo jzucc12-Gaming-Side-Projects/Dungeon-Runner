@@ -38,8 +38,8 @@ namespace DRN.COMBAT.TARGETING
         AOE = 1,
         Switchable = 2
     }
-
-
+        
+    #if UNITY_EDITOR
     [CustomPropertyDrawer(typeof(TargetingConfig))]
     public class TargetingConfigEditor : PropertyDrawer
     {
@@ -112,4 +112,5 @@ namespace DRN.COMBAT.TARGETING
             EditorGUI.PropertyField(NextRect(position), property.FindPropertyRelative("needSpecificAttacker"));
         }
     }
+    #endif
 }

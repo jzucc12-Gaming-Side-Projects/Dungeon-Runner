@@ -1,0 +1,26 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <ui:Template name="statEntry" src="project://database/Assets/DRN/Editor/Tools/statEntry.uxml?fileID=9197481963319205126&amp;guid=a0641a944200e9a448623698c1236c45&amp;type=3#statEntry" />
+    <Style src="project://database/Assets/JZ/Editor/Tools/JZBaseEditorUSS.uss?fileID=7433441132597879392&amp;guid=e2dd8255bef6ea644922d20c19c23a06&amp;type=3#JZBaseEditorUSS" />
+    <ui:VisualElement class="container" style="align-items: stretch; justify-content: flex-start; flex-grow: 1; height: 1500px;">
+        <ui:TextField picking-mode="Ignore" label="AI Name" value="Goblin" text="Goblin" name="aiName" tooltip="Name of the folder and json file. Used in naming the base prefab and logic scripts. Must be alphanumeric." style="margin-right: 5%; margin-left: 5%; height: 30px; -unity-font-style: bold; -unity-text-align: middle-left; font-size: 20px;" />
+        <ui:ScrollView style="margin-bottom: 110px; flex-grow: 1;">
+            <ui:Foldout text="AI Body" name="aiBodyFoldout" value="false" tooltip="Handles creation of base prefab and base stats." class="sectionHeader">
+                <uie:ObjectField label="Base Prefab" name="basePrefab" tooltip="Reference prefab for the base of the AI." class="fieldText" />
+                <ui:Instance template="statEntry" name="baseStats" tooltip="Enter base stats for the AI." />
+            </ui:Foldout>
+            <ui:Foldout text="Attack Logic" name="logicFoldout" value="true" tooltip="Handles creation of attack logic scripts" class="sectionHeader">
+                <uie:ObjectField label="Logic Template" name="logicTemplate" tooltip="Script to model generated AI Logics after." class="fieldText" />
+                <uie:IntegerField label="Logic Count" value="1" name="logicCount" tooltip="How many logic scripts you need to create." class="fieldText" />
+                <ui:Foldout text="Logic Names" name="logicNames" class="subHeader" />
+            </ui:Foldout>
+            <ui:Foldout text="Attackers" name="attackerFoldout" value="false" tooltip="Handles the creation of attaker components." class="sectionHeader">
+                <uie:ObjectField label="Attacker Prefab" name="attackerPrefab" tooltip="Reference prefab for attacker components." class="fieldText" />
+                <uie:IntegerField label="Attacker Count" value="1" name="attackerCount" tooltip="How many attackers you will need." class="fieldText" />
+            </ui:Foldout>
+        </ui:ScrollView>
+        <ui:VisualElement style="align-items: center; flex-direction: column; justify-content: space-between; flex-grow: 1; position: absolute; left: 0; right: 0; bottom: 0; height: 100px; margin-bottom: 10px; margin-right: 5px; margin-left: 5px;">
+            <ui:Label text="Notification Text goes here about whatever I need. I&apos;m going to keep typing so I can see it loop and see just how much text I can fit into this thing before it pops. Seems to be about three lines." display-tooltip-when-elided="false" name="notification" class="subHeader" style="-unity-text-align: middle-center; flex-wrap: wrap; white-space: normal; width: 100%; margin-bottom: 10px; flex-grow: 1; height: 60%;" />
+            <ui:Button text="Create AI" display-tooltip-when-elided="true" name="createButton" class="subHeader" style="white-space: nowrap; -unity-text-align: middle-center; font-size: 14px; -unity-font-style: bold; position: relative; width: 50%;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,4 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <Style src="project://database/Assets/JZ/Editor/Tools/JZBaseEditorUSS.uss?fileID=7433441132597879392&amp;guid=e2dd8255bef6ea644922d20c19c23a06&amp;type=3#JZBaseEditorUSS" />
+    <ui:TextField picking-mode="Ignore" label="Logic Name" value="logic 1" text="logic 1" name="logicName" tooltip="Name of the script to be made. Script naming convention will be &quot;&apos;ai name&apos; &apos;logic name&apos; Logic&quot;. Must be alphanumeric." class="fieldText" />
+</ui:UXML>

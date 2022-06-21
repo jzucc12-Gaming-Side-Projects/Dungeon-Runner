@@ -9,27 +9,37 @@ namespace DRN.COMBAT.COMBATANT
     /// </summary>
     public class AIAttacker : CombatAttacker
     {
-        [SerializeField] private int weaponNo = 0;
+        [SerializeField] private int weaponNo = -1;
         private CombatActionScheduler scheduler = null;
-        public event Action<int> OnAIReady = null;
+        public event Action<AIAttacker, int> OnAIReady = null;
 
 
         protected override void Awake()
         {
             base.Awake();
             scheduler = FindObjectOfType<CombatActionScheduler>();
-        }
-
-        protected override void Start()
-        {
-            base.Start();
+            if(weaponNo == -1)
+            {
+                int count = 0;
+                foreach(var attacker in transform.parent.GetComponentsInChildren<AIAttacker>())
+                {
+                    attacker.weaponNo = count;
+                    count++;
+                }
+            }
         }
 
         protected override int GetWeaponNumber() => weaponNo;
 
         protected override void OnBBFull()
         {
-            OnAIReady?.Invoke(turnNo);
+            OnAIReady?.Invoke(this, turnNo);
+        }
+
+        public void SetUp(int number, CombatBody body)
+        {
+            weaponNo = number;
+            this.body = body;
         }
     }
 }

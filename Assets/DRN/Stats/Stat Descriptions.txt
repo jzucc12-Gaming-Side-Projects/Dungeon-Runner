@@ -1,0 +1,18 @@
+{
+    "weaponStatInfo": {
+      "strength": "Ability to hit and deal damage with melee physical attacks",
+      "dexterity": "Ability to hit and deal damage with ranged physical attacks",
+      "techAffinity": "Ability to hit and deal damage with tech attacks",
+      "speed": "BB fill speed and ability to escape from combat",
+      "aim": "Ability to hit with physical attacks",
+      "crit": "Critical hit rate and bonus crticial hit damage"
+    },
+    "bodyStatInfo": {
+      "maxHP": "Maximum health",
+      "maxTP": "Maximum tech points",
+      "physicalRes": "Reduction in physical damage",
+      "techRes": "Reduction in tech damage, and resistance to tech effects",
+      "dodge": "Ability to evade attacks",
+      "fortune": "Critical hit rate and item drop rates"
+    }
+}

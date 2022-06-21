@@ -1,0 +1,11 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/JZ/Editor/Tools/JZBaseEditorUSS.uss?fileID=7433441132597879392&amp;guid=e2dd8255bef6ea644922d20c19c23a06&amp;type=3#JZBaseEditorUSS" />
+    <ui:VisualElement class="container" style="justify-content: space-around; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 5px; padding-right: 5px; padding-top: 10px; padding-bottom: 10px; align-items: center; flex-grow: 1; height: 300px; width: 350px; border-left-color: rgb(233, 233, 233); border-right-color: rgb(233, 233, 233); border-top-color: rgb(233, 233, 233); border-bottom-color: rgb(233, 233, 233); border-left-width: 5px; border-right-width: 5px; border-top-width: 5px; border-bottom-width: 5px; border-top-left-radius: 5px; border-bottom-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px;">
+        <ui:Label text="Notification Title will be slightly long so I can see a second line." display-tooltip-when-elided="true" name="title" class="sectionHeader" style="-unity-text-align: middle-center; padding-left: 0; padding-right: 0; padding-top: 0; margin-bottom: 5px; flex-wrap: wrap; align-items: auto; white-space: normal;" />
+        <ui:Label text="Notification Content goes here. I&apos;m going to make it long once again so I can see how the text moves out and about through the tool pop up thing. I should use this for tutorials and shit. That would be so much easier and nicer than the boxes I usually use. I&apos;m happy I found this system. So very neat." display-tooltip-when-elided="true" name="content" class="fieldText" style="flex-wrap: wrap; white-space: normal; -unity-text-align: middle-center; flex-grow: 1; font-size: 16px; padding-left: 7px; padding-right: 7px;" />
+        <ui:VisualElement style="width: 50%;">
+            <ui:Button text="YES" display-tooltip-when-elided="true" name="yesButton" />
+            <ui:Button text="NO" display-tooltip-when-elided="true" name="noButton" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

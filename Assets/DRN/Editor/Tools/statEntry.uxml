@@ -1,0 +1,11 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/DRN/AI%20Characters/Tools/Create%20New%20AI%20Tool/CreateNewAIUSS.uss?fileID=7433441132597879392&amp;guid=e2dd8255bef6ea644922d20c19c23a06&amp;type=3#CreateNewAIUSS" />
+    <ui:VisualElement name="statEntry">
+        <ui:VisualElement name="bodyStatContainer" class="subHeader">
+            <ui:Label text="BodyStats" display-tooltip-when-elided="true" name="bodyStatsHeader" class="subHeader" style="margin-top: 5px; padding-left: 0;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="weaponStatContainer" class="subHeader">
+            <ui:Label text="WeaponStats" display-tooltip-when-elided="true" name="weaponStatsHeader" class="subHeader" style="margin-top: 5px; padding-left: 0;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -10,34 +10,34 @@ namespace DRN.STATS
     [Serializable]
     public class StatList
     {
-        public Dictionary<WeaponStats, float> weaponStats = new Dictionary<WeaponStats, float>();
         public Dictionary<BodyStats, float> bodyStats = new Dictionary<BodyStats, float>();
+        public Dictionary<WeaponStats, float> weaponStats = new Dictionary<WeaponStats, float>();
 
 
-        public StatList()
+        public StatList(int startValue = 0)
         {
-            foreach(WeaponStats stat in Enum.GetValues(typeof(WeaponStats)))
-                weaponStats.Add(stat, 10);
-
             foreach(BodyStats stat in Enum.GetValues(typeof(BodyStats)))
-                bodyStats.Add(stat, 10);
+                bodyStats.Add(stat, startValue);
+    
+            foreach(WeaponStats stat in Enum.GetValues(typeof(WeaponStats)))
+                weaponStats.Add(stat, startValue);
         }
 
         public StatList(StatList source)
         {
-            this.weaponStats = source.weaponStats;
             this.bodyStats = source.bodyStats;
+            this.weaponStats = source.weaponStats;
         }
 
         #region //Getters
-        public int GetStat(WeaponStats stat)
-        {
-            return (int)weaponStats[stat];
-        }
-
         public int GetStat(BodyStats stat)
         {
             return (int)bodyStats[stat];
+        }
+
+        public int GetStat(WeaponStats stat)
+        {
+            return (int)weaponStats[stat];
         }
         #endregion
     }

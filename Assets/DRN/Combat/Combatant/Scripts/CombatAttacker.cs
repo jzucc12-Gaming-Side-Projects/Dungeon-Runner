@@ -8,7 +8,7 @@ namespace DRN.COMBAT.COMBATANT
     public abstract class CombatAttacker : CombatComponent
     {
         #region //CombatComponents
-        [SerializeField] private CombatBody body = null;
+        [SerializeField] protected CombatBody body = null;
         private Animator animator = null;
         private string weaponName = "";
         #endregion

@@ -1,0 +1,18 @@
+{
+    "weaponStatInfo": {
+      "strength": "Strength",
+      "dexterity": "Dexterity",
+      "techAffinity": "Tech Affinity",
+      "speed": "Speed",
+      "aim": "Aim",
+      "crit": "Critical"
+    },
+    "bodyStatInfo": {
+      "maxHP": "Max HP",
+      "maxTP": "Max TP",
+      "physicalRes": "Physical Resistance",
+      "techRes": "Tech Resistance",
+      "dodge": "Dodge",
+      "fortune": "Fortune"
+    }
+}
