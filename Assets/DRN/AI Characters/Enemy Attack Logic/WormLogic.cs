@@ -4,7 +4,7 @@ using DRN.STATS;
 
 namespace DRN.COMBAT.ACTION
 {
-    public class GiantRatLogic : AIAttackLogic
+    public class WormLogic : AIAttackLogic
     {
         protected override void AddActions()
         {

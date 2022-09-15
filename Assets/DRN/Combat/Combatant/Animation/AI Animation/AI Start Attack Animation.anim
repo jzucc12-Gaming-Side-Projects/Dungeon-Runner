@@ -58,21 +58,28 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.083333336
+  - time: 0.06666667
     functionName: SetMaterial
     data: Normal
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.16666667
+  - time: 0.13333334
     functionName: SetMaterial
     data: Base Attack
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.25
+  - time: 0.2
+    functionName: SetMaterial
+    data: Normal
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.26666668
     functionName: SetMaterial
     data: Base Attack
     objectReferenceParameter: {fileID: 0}

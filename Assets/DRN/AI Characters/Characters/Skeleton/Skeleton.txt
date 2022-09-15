@@ -1,7 +1,7 @@
 {
-  "characterName": "Giant Rat",
+  "characterName": "Skeleton",
   "nickName": "",
-  "currentHP": 30,
+  "currentHP": 165,
   "currentTP": 30,
   "baseStats": {
     "bodyStats": {
@@ -41,7 +41,7 @@
   },
   "weapons": [
     {
-      "weaponName": "weapon",
+      "weaponName": "Sword",
       "stats": {
         "bodyStats": {
           "maxHP": 10.0,
@@ -55,7 +55,28 @@
           "strength": 10.0,
           "dexterity": 10.0,
           "techAffinity": 10.0,
-          "speed": 10.0,
+          "speed": 22.0,
+          "aim": 10.0,
+          "crit": 10.0
+        }
+      }
+    },
+    {
+      "weaponName": "Shield",
+      "stats": {
+        "bodyStats": {
+          "maxHP": 10.0,
+          "maxTP": 10.0,
+          "physicalRes": 10.0,
+          "techRes": 10.0,
+          "dodge": 10.0,
+          "fortune": 10.0
+        },
+        "weaponStats": {
+          "strength": 10.0,
+          "dexterity": 10.0,
+          "techAffinity": 10.0,
+          "speed": 5.0,
           "aim": 10.0,
           "crit": 10.0
         }

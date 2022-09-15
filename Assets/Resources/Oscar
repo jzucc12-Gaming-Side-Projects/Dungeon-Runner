@@ -1,8 +1,8 @@
 {
   "characterName": "Oscar",
   "nickName": "",
-  "currentHP": 400,
-  "currentTP": 30,
+  "currentHP": 370,
+  "currentTP": 40,
   "baseStats": {
     "weaponStats": {
       "strength": 10.0,
@@ -41,7 +41,7 @@
   },
   "weapons": [
     {
-      "weaponName": "LH",
+      "weaponName": "Dagger",
       "stats": {
         "weaponStats": {
           "strength": 10.0,
@@ -52,7 +52,7 @@
           "crit": 10.0
         },
         "bodyStats": {
-          "maxHP": 25.0,
+          "maxHP": 10.0,
           "maxTP": 10.0,
           "physicalRes": 10.0,
           "techRes": 10.0,
@@ -63,7 +63,7 @@
     },
 
     {
-      "weaponName": "RH",
+      "weaponName": "Pistol",
       "stats": {
         "weaponStats": {
           "strength": 10.0,
@@ -74,7 +74,7 @@
           "crit": 10.0
         },
         "bodyStats": {
-          "maxHP": 25.0,
+          "maxHP": 10.0,
           "maxTP": 10.0,
           "physicalRes": 10.0,
           "techRes": 10.0,

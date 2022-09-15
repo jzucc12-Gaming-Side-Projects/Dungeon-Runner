@@ -1,0 +1,109 @@
+{
+  "characterName": "Dragon",
+  "nickName": "",
+  "currentHP": 40,
+  "currentTP": 15,
+  "baseStats": {
+    "bodyStats": {
+      "maxHP": 2.0,
+      "maxTP": 3.0,
+      "physicalRes": 6.0,
+      "techRes": 5.0,
+      "dodge": 5.0,
+      "fortune": 2.0
+    },
+    "weaponStats": {
+      "strength": 3.0,
+      "dexterity": 62.0,
+      "techAffinity": 4.0,
+      "speed": 2.0,
+      "aim": 3.0,
+      "crit": 6.0
+    }
+  },
+  "armorStats": {
+    "bodyStats": {
+      "maxHP": 2.0,
+      "maxTP": 3.0,
+      "physicalRes": 6.0,
+      "techRes": 5.0,
+      "dodge": 5.0,
+      "fortune": 2.0
+    },
+    "weaponStats": {
+      "strength": 3.0,
+      "dexterity": 62.0,
+      "techAffinity": 4.0,
+      "speed": 2.0,
+      "aim": 3.0,
+      "crit": 6.0
+    }
+  },
+  "weapons": [
+    {
+      "weaponName": "Head",
+      "stats": {
+        "bodyStats": {
+          "maxHP": 32.0,
+          "maxTP": 3.0,
+          "physicalRes": 2.0,
+          "techRes": 5.0,
+          "dodge": 5.0,
+          "fortune": 33.0
+        },
+        "weaponStats": {
+          "strength": 5.0,
+          "dexterity": 2.0,
+          "techAffinity": 36.0,
+          "speed": 2.0,
+          "aim": 2.0,
+          "crit": 1.0
+        }
+      }
+    },
+    {
+      "weaponName": "Tail",
+      "stats": {
+        "bodyStats": {
+          "maxHP": 2.0,
+          "maxTP": 3.0,
+          "physicalRes": 3.0,
+          "techRes": 2.0,
+          "dodge": 1.0,
+          "fortune": 5.0
+        },
+        "weaponStats": {
+          "strength": 3.0,
+          "dexterity": 3.0,
+          "techAffinity": 65.0,
+          "speed": 6.0,
+          "aim": 32.0,
+          "crit": 2.0
+        }
+      }
+    },
+    {
+      "weaponName": "Legs",
+      "stats": {
+        "bodyStats": {
+          "maxHP": 2.0,
+          "maxTP": 3.0,
+          "physicalRes": 6.0,
+          "techRes": 5.0,
+          "dodge": 4.0,
+          "fortune": 8.0
+        },
+        "weaponStats": {
+          "strength": 9.0,
+          "dexterity": 2.0,
+          "techAffinity": 3.0,
+          "speed": 6.0,
+          "aim": 5.0,
+          "crit": 2.0
+        }
+      }
+    }
+  ],
+  "exp": 0,
+  "level": 1
+}

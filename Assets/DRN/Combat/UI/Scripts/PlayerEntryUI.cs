@@ -1,6 +1,7 @@
 using DRN.COMBAT.COMBATANT;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace DRN.COMBAT.UI
 {
@@ -13,6 +14,7 @@ namespace DRN.COMBAT.UI
         [SerializeField, Range(1,2)] int playerNumber = 1;
         private Combatant combatant = null;
         private CombatAttacker[] attackers = new CombatAttacker[0];
+        private ActivePlayerManager playerManager = null;
         #endregion
 
         #region //UI components
@@ -21,6 +23,8 @@ namespace DRN.COMBAT.UI
         [SerializeField] private TextMeshProUGUI tpText = null;
         [SerializeField] private BattleBarUI leftHandBB = null;
         [SerializeField] private BattleBarUI rightHandBB = null;
+        [SerializeField] private Image[] attackerArrows = new Image[0];
+        [SerializeField] private TextMeshProUGUI[] attackerNames = new TextMeshProUGUI[0];
         #endregion
 
         #region //UI Colors
@@ -34,10 +38,21 @@ namespace DRN.COMBAT.UI
         private void Awake()
         {
             var playerGO = GameObject.FindGameObjectWithTag($"Player {playerNumber}");
+            playerManager = FindObjectOfType<ActivePlayerManager>();
             combatant = playerGO.GetComponent<Combatant>();
             attackers = playerGO.GetComponentsInChildren<CombatAttacker>();
             leftHandBB.SetAttacker(attackers[0]);
             rightHandBB.SetAttacker(attackers[1]);
+        }
+
+        private void OnEnable()
+        {
+            playerManager.ActivePlayerChanged += NewPlayer;
+        }
+
+        private void OnDisable() 
+        {
+            playerManager.ActivePlayerChanged -= NewPlayer;
         }
 
         private void Start()
@@ -45,6 +60,12 @@ namespace DRN.COMBAT.UI
             nameText.text = combatant.GetName();
             UpdateHPText();
             UpdateTPText();
+
+            for(int ii = 0; ii < attackers.Length; ii++)
+            {
+                attackerArrows[ii].enabled = false;
+                attackerNames[ii].text = attackers[ii].GetWeaponName();
+            }
         }
 
         private void Update()
@@ -74,6 +95,14 @@ namespace DRN.COMBAT.UI
             else return lowColor;
         }
         #endregion
+
+        private void NewPlayer()
+        {
+            for(int ii = 0; ii < attackers.Length; ii++)
+            {
+                attackerArrows[ii].enabled = attackers[ii] == playerManager.activeAttacker;
+            }
+        }
     }
 }
 

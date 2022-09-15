@@ -183,7 +183,10 @@ namespace DRN.TOOLS.AI
             //Create character data
             CharacterData characterData = new CharacterData(aiName.value);
             characterData.baseStats = baseStatEntry.GetStatList();
+            characterData.armorStats = baseStatEntry.GetStatList();
             characterData.weapons = charWeapons;
+            characterData.currentHP = characterData.GetTotalStat(STATS.BodyStats.maxHP);
+            characterData.currentTP = characterData.GetTotalStat(STATS.BodyStats.maxTP);
             CharacterData.CreateCharacterData(DRNGlobals.GetAIDataPath(aiName.value, $"{aiName.value}.txt"), characterData);
             AssetDatabase.ImportAsset($"{savePath}/{aiName.value}/{aiName.value}.txt");
 

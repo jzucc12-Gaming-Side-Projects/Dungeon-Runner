@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace DRN.COMBAT.ACTION
 {
-    public class GoblinSwordLogic : AIAttackLogic
+    public class SkeletonSwordLogic : AIAttackLogic
     {
         protected override void AddActions()
         {

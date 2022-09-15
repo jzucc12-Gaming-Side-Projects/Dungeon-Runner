@@ -85,6 +85,8 @@ namespace DRN.COMBAT.TARGETING
 
             return singleTarget;
         }
+
+        public List<Combatant> GetTargets() => aoeTargets;
         #endregion
 
         #region //Targeting info

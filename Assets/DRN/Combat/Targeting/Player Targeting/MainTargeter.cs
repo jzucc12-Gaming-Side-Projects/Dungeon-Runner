@@ -126,7 +126,19 @@ namespace DRN.COMBAT.TARGETING
         public bool ShouldCancel()
         {
             if(activeData.IsOnAllies()) return false;
-            targetIndex = activeData.SetTargets(enemies, targetIndex);
+
+            int deadIndex = -1;
+            for(int ii = 0; ii < activeData.GetTargets().Count; ii++)
+            {
+                if(activeData.GetTargets()[ii].IsAlive()) continue;
+                deadIndex = ii;
+            }
+
+            if(deadIndex >= targetIndex)
+                targetIndex = activeData.SetTargets(enemies, targetIndex);
+            else
+                targetIndex = activeData.SetTargets(enemies, targetIndex - 1);
+
             if(activeData.aoeTargets.Count == 0) return true;
             UpdateTargets();
             return false;
